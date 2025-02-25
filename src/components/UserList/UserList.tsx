@@ -9,7 +9,7 @@ export const UserList = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
   return (
-    <div className='font-feature-default flex flex-col justify-center font-inter antialiased animate-in fade-in zoom-in'>
+    <div className='font-feature-default flex w-full flex-col justify-center font-sf antialiased animate-in fade-in zoom-in'>
       <h2 className='mb-8 text-center text-[28px] font-bold'>Список пользователей</h2>
 
       {error && (

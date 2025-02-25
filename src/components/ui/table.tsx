@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 const Table = React.forwardRef<HTMLTableElement, React.HTMLAttributes<HTMLTableElement>>(
   ({ className, ...props }, ref) => (
-    <div className='custom-scrollbar relative mx-auto h-[421px] max-w-screen-xl overflow-scroll'>
+    <div className='custom-scrollbar sticky-table relative mx-auto h-[421px] overflow-scroll tablet:w-full desktop:max-w-screen-xl'>
       <table ref={ref} className={cn('w-full caption-bottom text-sm', className)} {...props} />
     </div>
   ),

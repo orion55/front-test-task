@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table.tsx';
-import { formatDate, formatLastLogin } from './date.ts';
+import { formatDate, formatLastLogin } from '@/lib/date.ts';
 
 interface UserTableProps {
   data: User[] | null;
@@ -84,37 +84,37 @@ export const UserTable = (props: UserTableProps) => {
               <div className='custom-table-cell-text w-32'>{user.lastName}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-24'> {user.gender}</div>
+              <div className='custom-table-cell-text w-24'>{user.gender}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-32'> {formatDate(user.dateOfBirth)}</div>
+              <div className='custom-table-cell-text w-32'>{formatDate(user.dateOfBirth)}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-48'> {user.email}</div>
+              <div className='custom-table-cell-text w-48'>{user.email}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-32'> {user.phone}</div>
+              <div className='custom-table-cell-text w-32'>{user.phone}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-40'> {user.registrationChannel}</div>
+              <div className='custom-table-cell-text w-40'>{user.registrationChannel}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-24'> {user.isVerified ? 'Yes' : 'No'}</div>
+              <div className='custom-table-cell-text w-24'>{user.isVerified ? 'Yes' : 'No'}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-24'> {user.status}</div>
+              <div className='custom-table-cell-text w-24'>{user.status}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-48'> {formatLastLogin(user.lastLogin)}</div>
+              <div className='custom-table-cell-text w-48'>{formatLastLogin(user.lastLogin)}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-32'> {user.userRole}</div>
+              <div className='custom-table-cell-text w-32'>{user.userRole}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-36'> {user.membershipLevel}</div>
+              <div className='custom-table-cell-text w-36'>{user.membershipLevel}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
-              <div className='custom-table-cell-text w-36'> {user.preferredLanguage}</div>
+              <div className='custom-table-cell-text w-36'>{user.preferredLanguage}</div>
             </TableCell>
             <TableCell className='custom-table-cell'>
               <div className='custom-table-cell-text w-20'>

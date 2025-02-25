@@ -1,6 +1,6 @@
 import { RegistrationForm } from '@/components/RegistrationForm';
 import { Toaster } from '@/components/ui/sonner';
-import { ThemeProvider } from '@/components/theme-provider';
+import { ThemeProvider } from '@/lib/theme-provider';
 import { UserList } from '@/components/UserList';
 
 export function App() {
